@@ -13,11 +13,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { HTTPService } from './httpservice.service';
 import { InfoPage } from '../pages/info/info';
 
+import { Geolocation } from '@ionic-native/geolocation';
+import { MapPage } from '../pages/map/map';
+import { Camera}  from '@ionic-native/camera';
+import { CameraPage } from '../pages/camera/camera';
+
+import { File } from '@ionic-native/file';
 @NgModule({
   declarations: [
     MyApp,
     RocketsPage,
-    InfoPage
+    InfoPage,
+    MapPage,
+    CameraPage
   ],
   imports: [
     BrowserModule,
@@ -28,9 +36,14 @@ import { InfoPage } from '../pages/info/info';
   entryComponents: [
     MyApp,
     RocketsPage,
-    InfoPage
+    InfoPage,
+    MapPage,
+    CameraPage
   ],
   providers: [
+    File,
+    Camera,
+    Geolocation,
     HTTPService,
     StatusBar,
     SplashScreen,
