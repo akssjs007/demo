@@ -24,3 +24,5 @@ As we use open source maps from leaflet, we simply install the npm package. Ther
 Usually most of the plugins need native enviroments to run. So do these plugins except geolocation. They don't work when you run ```ionic serve --lab```. So please run this project in your android phones. If you are an iPhone user, you need a Mac with XCode installed to build iOS applications. Refer to **iOS Devices** section in this [link](https://ionicframework.com/docs/intro/deploying/).
 
 Once you install plugins and get your project ready, run ```ionic cordova build android``` to generate the apk file. The genereated apk file is present inside platforms/android/app/build/outputs/apk/debug.
+
+Checkout Coursera [specialization](https://www.coursera.org/specializations/full-stack-mobile-app-development) on full stack development.
